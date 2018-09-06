@@ -4,7 +4,7 @@ import datetime
 TIMESTAMP="%Y%m%d%H%M%S"
 timestp = datetime.datetime.now()
 fname = '/home/pi/tmp/tmp.txt'
-os.system("sudo curl -s -u admin:flyingdog http://192.168.1.176:81/sd/%s/record000/ -o /home/pi/tmp/tmp.txt" % timestp.strftime('%Y%m%d'))
+os.system("sudo curl -s -u admin:flyingdog http://192.168.1.*:*/sd/%s/record000/ -o /home/pi/tmp/tmp.txt" % timestp.strftime('%Y%m%d'))
 with open(fname, 'r') as f:
     lines = f.readlines()
     last_line = lines[-2]
