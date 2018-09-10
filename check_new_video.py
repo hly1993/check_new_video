@@ -22,3 +22,4 @@ with open(fname, 'r') as f:
         print 1
     else:
         print 0
+       
